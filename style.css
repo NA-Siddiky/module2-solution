@@ -1,3 +1,54 @@
-.header{
-    text-align: center;
+* {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.main {
+  text-align: center;
+  margin: 30px;
+}
+
+.itemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.itemMainBox {
+  height: 200px;
+  border: 2px solid black;
+  flex: 1 1 300px;
+  margin: 25px;
+}
+
+.itemMainBox p {
+  width: 300px;
+  text-align: justify;
+}
+
+.itemSingleBox {
+  text-align: right;
+}
+.itemSingleBox h2 {
+  margin-left: 150px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#itemSubBoxOne {
+  background-color: #d59898;
+}
+#itemSubBoxTwo {
+  background-color: #c14543;
+}
+#itemSubBoxThree {
+  background-color: #e5d198;
+}
+
+@media (max-width: 768px) {
+  .itemContainer {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
